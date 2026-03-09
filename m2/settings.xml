@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+  <!-- 所有镜像都放在 <mirrors> 里 -->
+  <mirrors>
+    <mirror>
+      <id>aliyunmaven</id>
+      <mirrorOf>central</mirrorOf>
+      <name>阿里云公共仓库</name>
+      <url>https://maven.aliyun.com/repository/public</url>
+    </mirror>
+
+    <mirror>
+      <id>nexus-tencentyun</id>
+      <mirrorOf>central</mirrorOf>
+      <name>Tencent Maven 镜像</name>
+      <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
+    </mirror>
+
+    <mirror>
+      <id>huaweicloud</id>
+      <mirrorOf>central</mirrorOf>
+      <name>华为云 Maven 镜像</name>
+      <url>https://repo.huaweicloud.com/repository/maven/</url>
+    </mirror>
+  </mirrors>
+
+  <!-- JDK 配置 profile，没问题 -->
+  <profiles>
+    <profile>
+      <id>jdk-1.8</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+        <jdk>1.8</jdk>
+      </activation>
+      <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+      </properties>
+    </profile>
+  </profiles>
+
+  <!--  本地仓库路径设置 -->
+  <localRepository>D:/m2/repository</localRepository>
+
+</settings>
