@@ -27,6 +27,6 @@
 5. **完成！**  
    现在你可以愉快地使用 IDEA 写代码了～
 
-   推荐通过插件市场安装 **One Dark Theme** 主题和 **Atom Material lcons **插件，美观又护眼！
+   推荐通过插件市场安装 **One Dark Theme 和 Atom Material lcons** 插件，美观又护眼！
 
    ![One Dark Theme 效果](assets/idea-one-dark-theme.png)
