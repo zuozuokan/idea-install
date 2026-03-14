@@ -12,7 +12,7 @@
 3. **配置 Maven 镜像和本地仓库**  
    - 创建一个 `m2` 文件夹（比如 `D:\m2`），里面放 `settings.xml` 和 `repository`  
    - `settings.xml` 用来配置国内镜像源（阿里云/华为云等），加速依赖下载  
-   - `repository` 就是 Maven 本地仓库，存放下载的 jar 包
+   - `repository` 就是 Maven 本地仓库，存放下载的 jar 包，一开始可以为空
 
    ![Maven 配置文件夹结构](assets/maven-m2-folder.png)
 
@@ -27,6 +27,6 @@
 5. **完成！**  
    现在你可以愉快地使用 IDEA 写代码了～
 
-   推荐通过插件市场安装 **One Dark Theme 和 Atom Material lcons** 插件，美观又护眼！
+   推荐通过插件市场安装 **Material Theme UI 和 Atom Material lcons** 插件，美观又护眼！
 
    ![One Dark Theme 效果](assets/idea-one-dark-theme.png)
